@@ -1,5 +1,7 @@
-**Environment:** Kali Linux VM via dCloud WebRDP → Target: `198.19.40.100`
-**Tools Used:** Nmap · Gobuster · Hydra · SQL Injection · PHP Web Shell · Netcat · Python PTY
+## Cisco Ethical Hacker CTF — Attack Chain From Recon to Root
+
+- **Environment:** Kali Linux VM via dCloud WebRDP → Target: `198.19.40.100`
+- **Tools Used:** Nmap · Gobuster · Hydra · SQL Injection · PHP Web Shell · Netcat · Python PTY
 
 ---
 ### Attack Chain Summary
