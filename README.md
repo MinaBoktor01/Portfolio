@@ -36,6 +36,17 @@ Everything here is hands-on, documented in my own way of understanding, and perf
 
 ---
 
+### HackTheBox — Starting Point
+
+| Machine | Topics Covered | Difficulty | Link |
+|---------|---------------|------------|------|
+| Dancing | SMB enumeration, anonymous share access, file retrieval | Very Easy | [View](./hackthebox/HTB-Dancing.md) |
+| Meow | Telnet, default credentials, root access | Very Easy | [View](./hackthebox/HTB-Meow.md) |
+| Fawn | FTP enumeration, anonymous login, file retrieval | Very Easy | [View](./hackthebox/HTB-Fawn.md) |
+| Redeemer | Redis enumeration, unauthenticated access, keyspace extraction | Very Easy | [View](./hackthebox/HTB-Redeemer.md) |
+
+---
+
 ### Security Research
 
 Hands-on labs covering core offensive and defensive security concepts.
@@ -44,7 +55,8 @@ Hands-on labs covering core offensive and defensive security concepts.
 |-----|---------------|------|
 | Buffer Overflow Exploitation | Stack layout, shellcode, NOP sleds, ASLR, StackGuard | [View](./security-research/buffer-overflow-exploitation-lab.md) |
 | Network Security | Packet sniffing, ICMP spoofing, traceroute, iptables, stateful firewalls | [View](./security-research/network-security-lab.md) |
-| Web Security — CSRF | CSRF GET/POST attacks, token defense, SameSite cookies | [View](./security-research/web-security-csrf-lab.md) |
+| Web Security — CSRF | CSRF GET/POST attacks, token defense, SameSite cookies | [View](./security-research/web-security-csrf-lab.md) | Network Forensics — Hidden Camera Investigation | ARP scanning, MAC OUI analysis, TTL fingerprinting, RTSP port enumeration | [View](./security-research/network-forensics-investigation.md) |
+
 
 ---
 
@@ -68,7 +80,8 @@ Every writeup follows the standard penetration testing methodology:
 |----------|-------|
 | Recon & Scanning | Nmap, Gobuster, Nikto, Sherlock |
 | Exploitation | Hydra, SQLmap, Metasploit, Scapy |
-| Shells & Access | Netcat, Python PTY, SSH |
+| Shells & Access | Netcat, Python PTY, SSH, Telnet, FTP |
+| Database Interaction | redis-cli, smbclient |
 | OSINT | Sherlock, Wigle.net, Etherscan, CyberChef |
 | Monitoring & Defense | Splunk, Security Onion, Carbon Black, SentinelOne |
 | Infrastructure | pfSense, VMware, VirtualBox, WireGuard |
@@ -83,10 +96,13 @@ Every writeup follows the standard penetration testing methodology:
 - **Programming:** Python, Java, C, Bash, KQL
 - **OS & Networking:** Windows, Linux (Ubuntu, Arch, Debian, Fedora), VLAN, NAT, UFW, RAID-1
 - **Frameworks:** NIST CSF, ISO 27001, Vulnerability Management, Incident Response, Change Management
+- **Protocols:** SMB, FTP, SFTP, Telnet, Redis, SSH, HTTP/S, ICMP
 
 ---
 
 ## Notable Projects
+**Authorized Network Forensic Investigation** *(May 2025)*
+Conducted a legal network forensic investigation on behalf of family members concerned about unauthorized surveillance devices. Used Nmap, ARP scanning, MAC OUI analysis, TTL fingerprinting, and camera-specific port enumeration to identify and classify all 6 devices on the network. Produced documented evidence showing no hidden cameras present on the WiFi network.
 
 **Raspberry Pi Secure Access Point with DNS Filtering** *(May 2025)*
 Enterprise-grade wireless access point using Raspberry Pi 4 with Pi-hole DNS filtering, Tailscale VPN, UFW firewall, and NAT — blocking 85% of malicious domains across 50+ users.
