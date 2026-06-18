@@ -1,5 +1,5 @@
 # HackTheBox — Dancing (Windows/SMB)
-**Platform:** HackTheBox — Starting Point
+**Platform:** HackTheBox — Starting Point (Tier 0)
 **Category:** Network, SMB
 **Difficulty:** Very Easy
 
