@@ -57,7 +57,7 @@ Hands-on labs covering core offensive and defensive security concepts.
 | Network Security | Packet sniffing, ICMP spoofing, traceroute, iptables, stateful firewalls | [View](./security-research/network-security-lab.md) |
 | Web Security — CSRF | CSRF GET/POST attacks, token defense, SameSite cookies | [View](./security-research/web-security-csrf-lab.md) |
 | Network Forensics — Hidden Camera Investigation | ARP scanning, MAC OUI analysis, TTL fingerprinting, RTSP port enumeration | [View](./security-research/network-forensics-investigation.md) |
-| Portable Tail Detector | Probe request correlation, session segmentation, monitor mode, privacy-by-design | [View](security-research/Portable-Probe-Request-Tail-Detector) |
+| Portable Tail Detector | Probe request correlation, session segmentation, monitor mode, privacy-by-design | [View](security-research/Portable-Probe-Request-Tail-Detector.md) |
 
 ---
 
