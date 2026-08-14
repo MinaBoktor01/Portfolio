@@ -1,6 +1,6 @@
 ## About Me
 
-I'm a Computer Science graduate and Masters student in Cybersecurity at Montclair State University. While my professional experience spans SOC analysis, risk & compliance, and email security, this GitHub is where I document the offensive side of my skillset — CTF writeups, lab walkthroughs, and security research built up through self-study and structured courses.
+I'm a Computer Science graduate of Montclair State University. My professional experience spans SOC analysis, risk & compliance, and email security, and this GitHub is where I document the offensive side of my skillset — CTF writeups, lab walkthroughs, and security research built up through self-study and structured courses.
 
 Everything here is hands-on, documented in my own way of understanding, and performed in legal controlled lab environments.
 
@@ -55,8 +55,9 @@ Hands-on labs covering core offensive and defensive security concepts.
 |-----|---------------|------|
 | Buffer Overflow Exploitation | Stack layout, shellcode, NOP sleds, ASLR, StackGuard | [View](./security-research/buffer-overflow-exploitation-lab.md) |
 | Network Security | Packet sniffing, ICMP spoofing, traceroute, iptables, stateful firewalls | [View](./security-research/network-security-lab.md) |
-| Web Security — CSRF | CSRF GET/POST attacks, token defense, SameSite cookies | [View](./security-research/web-security-csrf-lab.md) | 
+| Web Security — CSRF | CSRF GET/POST attacks, token defense, SameSite cookies | [View](./security-research/web-security-csrf-lab.md) |
 | Network Forensics — Hidden Camera Investigation | ARP scanning, MAC OUI analysis, TTL fingerprinting, RTSP port enumeration | [View](./security-research/network-forensics-investigation.md) |
+| Portable Tail Detector | Probe request correlation, session segmentation, monitor mode, privacy-by-design | [View](./security-research/Portable-Probe-Reuest-Tail-Detector.md) |
 
 ---
 
@@ -101,6 +102,10 @@ Every writeup follows the standard penetration testing methodology:
 ---
 
 ## Notable Projects
+
+**Portable Probe-Request Tail Detector** *(Aug 2026)*
+Built a battery-powered Raspberry Pi counter-surveillance sensor using Scapy to passively capture 802.11 probe requests, with time-gap session segmentation and correlation-based alerting to detect devices reappearing across multiple encounters without GPS hardware. Applied privacy-by-design principles throughout: owned devices excluded at capture time, no default SSID/network-history logging, and alerts triggered only by cross-session correlation rather than raw signal proximity.
+
 **Authorized Network Forensic Investigation** *(May 2025)*
 Conducted a legal network forensic investigation on behalf of family members concerned about unauthorized surveillance devices. Used Nmap, ARP scanning, MAC OUI analysis, TTL fingerprinting, and camera-specific port enumeration to identify and classify all 6 devices on the network. Produced documented evidence showing no hidden cameras present on the WiFi network.
 
@@ -109,9 +114,6 @@ Enterprise-grade wireless access point using Raspberry Pi 4 with Pi-hole DNS fil
 
 **Virtualized Home Lab: Detection & Monitoring** *(July 2024)*
 VMware-based cross-platform security lab with Security Onion IDS, pfSense firewall, VLAN segmentation, and real-time monitoring dashboards.
-
-**Home Server with DNS and VPN Access** *(June 2024)*
-Ubuntu/CasaOS server with Nextcloud storage, AES-256 encryption, RAID-1 redundancy, WireGuard VPN, and 99.9% uptime.
 
 ---
 
